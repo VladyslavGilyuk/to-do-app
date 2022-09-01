@@ -41,7 +41,7 @@ const toggleTask = (id) => {
   const saveTask = (id) => {
 
 let newTask = [...todos].map(todo => {
-  if(todo.id == id) {
+  if(todo.id === id) {
     todo.task = value
   }
   return todo

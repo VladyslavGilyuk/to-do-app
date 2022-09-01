@@ -10,7 +10,7 @@ function ToDo({edit, value, setValue, saveTask, todo, editTask, removeTask, togg
   return (
     <div key={todo.id} className="to-do-item">
     {
-        edit == todo.id ? 
+        edit === todo.id ? 
           <div  className={todo.complete ? "item-strike list-container" : "list-container"}>
                 <input className='input-style'  value={value} onChange={(e)=>setValue(e.target.value)}  />
                 <button onClick={() =>saveTask(todo.id)} className="icon-btn"><img src={saveIcon} alt='save icon' className='icon-style'></img></button>
