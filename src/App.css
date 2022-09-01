@@ -1,38 +1,152 @@
-.App {
-  text-align: center;
+* {
+margin: 0;
+padding: 0;
+box-sizing: border-box;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: beige;
+  
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.container {
+    width: 750px;
+    border: 3px solid rgb(97, 14, 97);
+    padding: 2rem;
+    background: linear-gradient(rgb(153, 64, 153), rgb(134, 16, 134));
+    margin: 4rem;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.header {
+    color: #ffdb58;
 }
 
-.App-link {
-  color: #61dafb;
+.form-style {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0.5rem;
+}
+.input-style {
+padding: 0.5rem;
+margin: 0.2rem;
+width: 500px;
+border-radius: 5px;
+border: none;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.input-style:focus{ 
+    outline: 1px solid #e7b810;
+    box-shadow: inset 0 0 0 1px #e7b810;
 }
+
+.add-btn {
+    padding: 0.5rem;
+    background-color: #e7b810;
+    border: 1px solid #e7b810;;
+    border-radius: 20px;
+    margin-left: 10px;
+}
+
+.add-btn:hover {
+    background-color: #f7c925;
+    transition: 0.1s ease-in-out;
+}
+.to-do-item {
+    font-size: 18px;
+}
+
+.icon-btn {
+    margin: 0.1rem;
+
+}
+.icon-style {
+    width: 25px;
+    height: 25px;
+}
+.list-container {
+    background-color: #ffdb58;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    margin: 0.2rem;
+    padding: 0.3rem;
+    border: 3px solid rgb(193, 193, 176);
+}
+
+.item-strike {
+    text-decoration: line-through; 
+    background-color: #ac9748;
+    border: 3px solid #ac9748;
+}
+
+.item {
+    width: 550px;
+    padding: 0.5rem;
+    overflow: hidden 
+}
+
+@media screen and (max-width: 767px) {
+
+    .container {
+        width: 450px;
+    }
+    .header {
+        font-size: 25px;
+    }
+    .input-style {
+        width: 250px;
+        padding: 0.3rem;
+        }
+    .add-btn {
+            padding: 0.3rem;
+        }
+     .icon-style {
+            width: 20px;
+            height: 20px;
+        }
+    .to-do-item {
+            font-size: 15px;
+        }
+        .item {
+            max-width: 250px;
+            padding: 0.5rem;
+            
+        }
+}
+
+@media screen and (max-width: 480px) {
+    .container {
+        width: 270px;
+        padding: 1rem;
+        margin: 0;
+        margin-top: 50px;
+    }
+    .input-style {
+        width: 150px;
+    }
+    .add-btn {
+        padding: 0.2rem;
+        font-size: 10px;
+    }
+    .icon-style {
+        width: 15px;
+        height: 15px;
+    }
+    .list-container {
+        padding: 0;
+    }
+    .to-do-item {
+        font-size: 15px;
+            }
+    .item {
+        max-width: 120px;
+        margin-right: 5px;
+            }
+}
+
+
