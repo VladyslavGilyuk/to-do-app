@@ -1,6 +1,7 @@
 import React, { useState } from 'react'
 
 function ToDoForm({addTask}) {
+
   const [userInput, setUserInput] = useState("")
 
   const handleSubmit = (e) => {
@@ -11,12 +12,11 @@ function ToDoForm({addTask}) {
   const handleChange = (e) => {
     setUserInput(e.currentTarget.value)
   }
-
   const handleKey = (e) => {
     if (e.key === "Enter") {
       handleSubmit(e)
     }
-    }
+  }
 
   return (
     <form className='form-style' onSubmit={handleSubmit}>
