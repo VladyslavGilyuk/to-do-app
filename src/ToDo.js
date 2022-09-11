@@ -5,10 +5,10 @@ import saveIcon from "./icons/save.png"
 import completeIcon from "./icons/complete.png"
 
 
-function ToDo({edit, value, setValue, saveTask, todo, editTask, removeTask, toggleTask} ) {
+function ToDo({edit, value, setValue, saveTask, todo, editTask, removeTask, toggleTask}) {
   return (
     <div key={todo.id} className="to-do-item">
-    {
+    { /*checks if "edit input" should be shown on item or default to-do item*/
       edit === todo.id ? 
         <div className={todo.complete ? "item-strike list-container" : "list-container"}>
           <input className='input-style'  value={value} onChange={(e)=>setValue(e.target.value)}  />

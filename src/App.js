@@ -1,11 +1,14 @@
-import { useState} from 'react';
+import { useState } from 'react';
 import './App.css';
 import ToDo from './ToDo';
 import ToDoForm from './ToDoForm';
 
 function App() {
+  /*stores to-do items*/
   const [todos, setTodos] = useState([])
+  /*stores the id of item to edit*/
   const [edit, setEdit] = useState(null)
+  /*stores the edited value*/
   const [value, setValue] = useState("")
 
   const addTask = (userInput) => {

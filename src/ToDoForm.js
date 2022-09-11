@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 
 function ToDoForm({addTask}) {
-
+  /*stores the value of form input*/
   const [userInput, setUserInput] = useState("")
 
   const handleSubmit = (e) => {

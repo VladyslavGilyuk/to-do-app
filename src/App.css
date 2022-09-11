@@ -24,6 +24,7 @@ body {
   color: #ffdb58;
 }
 
+/*ToDoForm styles*/
 .form-style {
   display: flex;
   justify-content: center;
@@ -57,6 +58,7 @@ body {
   transition: 0.1s ease-in-out;
 }
 
+/*ToDo styles*/
 .to-do-item {
   font-size: 18px;
 }
@@ -93,6 +95,7 @@ body {
   overflow: hidden 
 }
 
+/*Smaller screens styles*/
 @media screen and (max-width: 767px) {
   .container {
     width: 450px;
@@ -126,6 +129,7 @@ body {
   }
 }
 
+/*Phone styles*/
 @media screen and (max-width: 480px) {
   .container {
     width: 270px;
